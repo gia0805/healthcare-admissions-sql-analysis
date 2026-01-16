@@ -12,13 +12,12 @@ FROM healthcare;
 
 -- Overall billing summary
 SELECT
-  "Medical Condition" AS medical_condition,
-  COUNT(*) AS patients,
+  COUNT(*) AS total_admissions,
   ROUND(SUM("Billing Amount"), 2) AS total_billing,
-  ROUND(AVG("Billing Amount"), 2) AS avg_billing
-FROM healthcare
-GROUP BY "Medical Condition"
-ORDER BY total_billing DESC;
+  ROUND(AVG("Billing Amount"), 2) AS avg_billing,
+  ROUND(MIN("Billing Amount"), 2) AS min_billing,
+  ROUND(MAX("Billing Amount"), 2) AS max_billing
+FROM healthcare;
 
 -- Cost drivers by medical condition
 SELECT

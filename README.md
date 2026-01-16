@@ -52,3 +52,8 @@ Key fields include:
 - 'queries.sql' – SQL queries used for analysis
 - 'insights.md' – Summary of analytical findings
 - 'healthcare_dataset.csv' – Source dataset
+
+**Case Study**
+
+A detailed walkthrough of the analysis is available here:  
+[Healthcare Admissions SQL Case Study (PDF)](Healthcare_Admissions_SQL_Case_Study.pdf)

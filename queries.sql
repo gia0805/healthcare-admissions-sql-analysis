@@ -72,4 +72,4 @@ SELECT
   ROUND(AVG("Billing Amount"), 2) AS avg_billing
 FROM healthcare
 GROUP BY "Insurance Provider"
-ORDER BY patients DESC;
+ORDER BY patients DESC; 
